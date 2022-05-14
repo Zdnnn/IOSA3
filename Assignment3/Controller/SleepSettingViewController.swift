@@ -23,6 +23,7 @@ class SleepSettingViewController: UIViewController {
     @IBAction func nameSetting(_ sender: UITextField) {
         name = sender.text ?? "Strange sleeper"
     }
+    // set up user's name
     
     @IBAction func minusBottom(_ sender: Any) {
         if (self.time == 0) {
@@ -41,6 +42,7 @@ class SleepSettingViewController: UIViewController {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.sleepStartTime = Date()
     }
+    //start timer
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goReady"{
@@ -49,5 +51,6 @@ class SleepSettingViewController: UIViewController {
             viewController.sleepTime = time
         }
     }
+    // go to settings page
     
 }
