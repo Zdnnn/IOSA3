@@ -69,6 +69,7 @@ class SleepHistoryViewController: UIViewController {
         }
     }
     
+    //set reset function
     @IBAction func reset(_ sender: Any) {
         UserDefaults.standard.removeObject(forKey: "Sleeper")
         UserDefaults.standard.removeObject(forKey: "Duration")
