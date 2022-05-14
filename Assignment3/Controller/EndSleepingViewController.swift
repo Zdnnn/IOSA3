@@ -14,7 +14,7 @@ class EndSleepingViewController: UIViewController {
     @IBOutlet weak var nameDisplay: UILabel!
     @IBOutlet weak var timeDisplay: UILabel!
     
-    
+    // Initial loading Read name and time
     override func viewDidLoad() {
         super.viewDidLoad()
         nameDisplay.text = sleeperName
